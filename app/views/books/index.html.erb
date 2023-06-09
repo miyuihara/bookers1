@@ -1,0 +1,13 @@
+<% @books.each do |book|%>
+
+<p><strong>Title</strong>
+ <span>
+  <%= link_to book.title, book_path(book.id) %>
+  </span>
+ </p>
+
+ <p><strong>Body</strong>
+ <%= book.body %>
+ </p>
+
+<% end %>
